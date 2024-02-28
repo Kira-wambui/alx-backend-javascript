@@ -1,12 +1,11 @@
-#!/usr/bin/env node
-const fs = require('node:fs');
+const fs = require('fs');
 
 /**
- * Counts students in a CSV datafile.
- * @param {String} dataPath The path to CSV datafile.
+ * Counts the students in a CSV data file.
+ * @param {String} dataPath The path to the CSV data file.
  * @author Nancy Njuguna <https://github.com/Kira-wambui>
  */
- const countStudents = (dataPath) => {
+const countStudents = (dataPath) => {
   if (!fs.existsSync(dataPath)) {
     throw new Error('Cannot load the database');
   }
